@@ -1,0 +1,187 @@
+/* 
+    By F1LI
+*/
+
+/* ---------- << imports >> ---------- */
+
+@import url(reset.css);
+@import url(all.min.css);
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+/* ---------- << main >> ---------- */
+
+html {
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* ---------- << content >> ---------- */
+
+.content img {
+    width: 100%;
+    height: auto;
+}
+
+/* ---------- << sections-top >> ---------- */
+
+.section-top {
+    width: 100%;
+}
+
+.section-top span {
+    color: rgb(48, 45, 45);
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.section-top span::after {
+    content: '';
+    display: block;
+    width: 65px;
+    height: 3px;
+    border-radius: 6px;
+    background-color: rgb(43, 41, 41);
+    margin-top: 25px;
+    margin-bottom: 60px;
+}
+
+/* ---------- << program-section >> ---------- */
+
+.program-section {
+    padding: 60px 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.program-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.program-child img {
+    width: 430px;
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+    height: 286.81px;
+}
+
+.program-description {
+    width: 430px;
+    text-align: center;
+}
+
+.program-description small {
+    font-size: 25px;
+    line-height: 2.3;
+    font-weight: 600;
+}
+
+.program-description span {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.program-description p {
+    font-size: 17px;
+    line-height: 1.5;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.045em;
+    padding: 0 20px;
+}
+
+/* ---------- << whyus-section >> ---------- */
+
+.whyUs-section {
+    padding: 60px 0;
+    background-color: rgb(245, 245, 245);
+}
+
+.whyUs-content {
+    display: flex;
+    justify-content: center;
+}
+
+.whyUs-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    text-align: center;
+    margin: 0 70px;
+    border-radius: 25px;
+    padding: 45px 10px;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.whyUs-child:hover {
+    background-color: #00000024;
+}
+
+.whyUs-child i {
+    font-size: 40px;
+}
+
+.whyUs-child span {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.whyUs-child p {
+    letter-spacing: 0.045em;
+    line-height: 1.5;
+}
+
+/* ---------- << ourTeam-section >> ---------- */
+
+.ourTeam-section {
+    padding: 60px 0;
+}
+
+.ourTeam-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ourTeam-child {
+    text-align: center;
+}
+
+.ourTeam-child img {
+    width: 250px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px black;
+    margin: 0 100px;
+}
+
+.ourTeam-child span {
+    display: block;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 2.5;
+}
+
+.contact i {
+    font-size: 25px;
+    margin: 10px;
+    color: rgb(49, 48, 48);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.contact i:hover {
+    opacity: 65%;
+}
+
+/* background-color: rgb(245, 245, 245); */
