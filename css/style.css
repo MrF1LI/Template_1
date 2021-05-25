@@ -1,11 +1,10 @@
-/* 
-    By F1LI
-*/
+/* By F1LI */
 
 /* ---------- << imports >> ---------- */
 
 @import url(reset.css);
 @import url(all.min.css);
+@import url(animate.css);
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 
@@ -24,9 +23,64 @@ html {
 
 /* ---------- << content >> ---------- */
 
+.content {
+    position: relative;
+}
+
 .content img {
     width: 100%;
-    height: auto;
+    height: 1080px;
+}
+
+.msg {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 300px;
+    text-align: center;
+    /* top: 300px;
+    left: 550px; */
+}
+
+.msg small {
+    font-size: 90px;
+    font-weight: 600;
+    text-shadow: 0 0 6px white;
+}
+
+.msg span {
+    color: white;
+    display: block;
+    font-size: 100px;
+    text-shadow: 0 0 5px black;
+    margin-left: 30px;
+}
+
+.msg p {
+    color: white;
+    font-size: 18px;
+    /* max-width: 500px;
+    margin-top: 30px;
+    margin-left: 30px; */
+}
+
+/* ---------- << header >> ---------- */
+
+header {
+    padding: 10px 20%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    z-index: 200;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 30px;
 }
 
 /* ---------- << sections-top >> ---------- */
@@ -63,6 +117,7 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .program-child img {
@@ -96,6 +151,7 @@ html {
     font-weight: 500;
     letter-spacing: 0.045em;
     padding: 0 20px;
+    margin-bottom: 20px;
 }
 
 /* ---------- << whyus-section >> ---------- */
@@ -108,6 +164,7 @@ html {
 .whyUs-content {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .whyUs-child {
@@ -117,7 +174,7 @@ html {
     width: 280px;
     text-align: center;
     margin: 0 70px;
-    border-radius: 25px;
+    border-radius: 5px;
     padding: 45px 10px;
     transition: 0.8s;
     cursor: pointer;
@@ -143,19 +200,178 @@ html {
     line-height: 1.5;
 }
 
+/* ---------- << exercise-section >> ---------- */
+
+.exercise-section {
+    padding: 60px 0;
+}
+
+.exercise-content {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+
+.exercise-child {
+    display: flex;
+    padding: 10px 0 50px 0;
+    width: 50%;
+    justify-content: center;
+}
+
+.exercise-child i {
+    font-size: 45px;
+}
+
+.exercise {
+    padding: 0 20px; 
+}
+
+.exercise span {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.exercise ul {
+    list-style: inside;
+    padding: 10px;
+}
+
+.exercise ul li a {
+    color: rgb(49, 48, 48);
+    line-height: 1.5;
+    font-size: 14px;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.exercise ul li a:hover {
+    color: rgb(150, 150, 150);
+}
+
+/* ---------- << contact-section >> ---------- */
+
+.contact-section {
+    padding: 60px 0;
+}
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 70px;
+}
+
+.contact-child {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-child i {
+    font-size: 40px;
+}
+
+.contact-child small {
+    display: block;
+    font-size: 28px;
+    margin: 6px 0 10px 0;
+    font-weight: 600;
+}
+
+.contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 60px;
+    margin-top: 25px;
+}
+
+.contact-form input {
+    margin: 10px 0;
+    width: 90%;
+    height: 45px;
+    padding: 15px;
+    background: none;
+    border-radius: 0;
+    transition: none;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    border: 1px solid #ced4da;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #80bdff;
+}
+
+.contact-form textarea {
+    margin: 10px 0;
+    width: 90%;
+    height: 150px;
+    padding: 15px;
+    background: none;
+    border-radius: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    border: 1px solid #ced4da;
+    resize: none;
+}
+
+.for-button {
+    width: 100%;
+    padding: 0 48px;
+}
+
+.btn {
+    margin-top: 10px;
+    font-weight: 400;
+    line-height: 1.5;
+    user-select: none;
+    border: 1px solid #6c757d;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    color: #fff;
+    background-color: #6c757d;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 0.25rem rgb(108 117 125 / 50%);
+}
+
 /* ---------- << ourTeam-section >> ---------- */
 
 .ourTeam-section {
     padding: 60px 0;
+    background-color: rgb(245, 245, 245);
 }
 
 .ourTeam-content {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .ourTeam-child {
     text-align: center;
+    min-height: 361px;
+}
+
+.ourTeam-child:hover > .contact {
+    display: block;
 }
 
 .ourTeam-child img {
@@ -172,16 +388,174 @@ html {
     line-height: 2.5;
 }
 
+.contact {
+    display: none;
+}
+
 .contact i {
     font-size: 25px;
     margin: 10px;
     color: rgb(49, 48, 48);
     transition: 0.3s;
     cursor: pointer;
+    animation: fadeInDown 0.3s ease-in-out;
 }
 
 .contact i:hover {
     opacity: 65%;
 }
 
-/* background-color: rgb(245, 245, 245); */
+/* ---------- << footer >> ---------- */
+
+
+footer {
+    background-color: rgb(25, 25, 25);
+    width: 100%;
+    padding: 25px 0 20px 0;
+    border-bottom: 1px solid rgb(76, 76, 76);
+}
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(76, 76, 76);
+    padding-bottom: 20px;
+}
+
+.footer-top img {
+    margin-left: 30px;
+}
+
+.footer-social ul {
+    display: flex;
+    margin-right: 30px;
+}
+
+.footer-social ul li {
+    width: 80px;
+    text-align: right;
+}
+
+.footer-social ul li a:hover {
+    opacity: 0.7;
+}
+
+.footer-social ul li a i {
+    font-size: 35px;
+}
+
+.copyright {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.copyright small {
+  font-size: 16px;
+  color: #888;
+}
+
+/* ---------- << responsive >> ---------- */
+
+@media (max-width: 1200px) {
+    header {
+        padding: 10px 10%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .msg {
+        transform: scale(0.85);
+    }
+}
+
+@media (max-width: 900px) {
+    nav {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .exercise-child {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .msg {
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 650px) {
+    .contact-form input,
+    .contact-form textarea {
+        width: 90%;
+    }
+
+    .footer-social ul li a i {
+        font-size: 30px
+    }
+
+    .footer-top img {
+        width: 200px;
+    }
+
+    .footer-social ul {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    .contact-form {
+        padding: 0;
+    }
+
+    .program-child img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-child {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 490px) {
+    .footer-top {
+        justify-content: center;
+    }
+
+    .footer-social {
+        padding: 20px 0;
+    }
+
+    .msg {
+        transform: scale(0.6);
+    }
+
+    header {
+        width: 200px;
+    }
+}
+
+/* ---------- << scrollbar >> ---------- */
+
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(76, 76, 76);
+    border-radius: 5px;
+}
+
+/* By F1LI */
